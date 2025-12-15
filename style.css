@@ -1,0 +1,102 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Libertinus Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+.oswald {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* --- Navbar Animation --- */
+.navbar {
+    transition: all 0.4s ease-in-out;
+    padding: 15px 0;
+}
+
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.95) !important; /* Glass effect */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    padding: 5px 0;
+}
+
+/* --- Hero/Carousel Section --- */
+.carousel-item {
+    height: 100vh;
+    position: relative;
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.5); /* Darkens image so text is readable */
+}
+
+/* Hero Text Overlay */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+    width: 90%;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-content span {
+    color: #0d6efd; /* Bootstrap Primary Color */
+    font-weight: 700;
+}
+
+/* --- About Section --- */
+.accordion-button:not(.collapsed) {
+    background-color: #e7f1ff;
+    color: #0c63e4;
+}
+
+/* --- Project Card Animations --- */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* --- Contact Section --- */
+.contact-info-box {
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-icon {
+    font-size: 2rem;
+    color: #0d6efd;
+    margin-bottom: 10px;
+}
